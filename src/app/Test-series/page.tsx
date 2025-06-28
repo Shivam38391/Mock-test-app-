@@ -262,7 +262,7 @@ export default function TestPlatform() {
   const [selectedTestSeries, setSelectedTestSeries] = useState<TestSeries | null>(null)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: number }>({})
-  const [isCompleted, setIsCompleted] = useState(false)
+  // const [isCompleted, setIsCompleted] = useState(false)
   const [timeLeft, setTimeLeft] = useState(0)
   const [isTimerActive, setIsTimerActive] = useState(false)
 
@@ -289,7 +289,7 @@ export default function TestPlatform() {
   }, [isTimerActive, timeLeft])
 
   const handleTimeUp = () => {
-    setIsCompleted(true)
+    // setIsCompleted(true)
     setCurrentPage("results")
   }
 
@@ -297,7 +297,7 @@ export default function TestPlatform() {
     setSelectedTestSeries(testSeries)
     setCurrentQuestionIndex(0)
     setSelectedAnswers({})
-    setIsCompleted(false)
+    // setIsCompleted(false)
     setTimeLeft(testSeries.duration * 60) // Convert minutes to seconds
     setIsTimerActive(true)
     setCurrentPage("quiz")
@@ -332,7 +332,7 @@ export default function TestPlatform() {
     if (currentQuestionIndex < selectedTestSeries.questions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1)
     } else {
-      setIsCompleted(true)
+      // setIsCompleted(true)
       setIsTimerActive(false)
       setCurrentPage("results")
     }
@@ -360,7 +360,7 @@ export default function TestPlatform() {
     setSelectedTestSeries(null)
     setCurrentQuestionIndex(0)
     setSelectedAnswers({})
-    setIsCompleted(false)
+    // setIsCompleted(false)
     setTimeLeft(0)
     setIsTimerActive(false)
   }

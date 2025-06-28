@@ -1,14 +1,10 @@
 "Use client";
 
 import { Button } from "@/components/ui/button"
-import axios from "axios"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import GoogleLogin from "./(SocialLogins)/GoogleLogin";
-function LoginForm({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+function LoginForm() {
 
 
 
