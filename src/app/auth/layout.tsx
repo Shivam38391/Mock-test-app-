@@ -8,7 +8,7 @@ export default function AuthLayout({ children, ...props }: Readonly<{ children: 
 
             <div className={cn("flex flex-col gap-6",)} {...props}>
                 <Card className="overflow-hidden p-0">
-                    <CardContent className="grid p-0 md:grid-cols-2  bg-green-500">
+                    <CardContent className="grid p-0 md:grid-cols-2   bg-cyan-500">
                         {children}
 
                         <div className="bg-muted relative hidden md:block">

@@ -29,7 +29,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GoogleOAuthProvider clientId="<your_client_id>">
+        <GoogleOAuthProvider
+          clientId="910427402581-01ovfg2t62eulalmo5plmghvhdpl67mf.apps.googleusercontent.com"
+
+        >
           {children}
         </GoogleOAuthProvider>;
       </body>
