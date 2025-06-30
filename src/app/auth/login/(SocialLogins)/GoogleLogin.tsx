@@ -18,7 +18,7 @@ const googleLogin = useGoogleLogin({
 
     const data = {
       grant_type: 'convert_token',
-      client_id: 'DIlpcg5q7X6UncA5OXBQBA2dMCIoKzZkxNsKwuN8',
+      client_id: 'FEtBSZFR8vDfPGWqgJeKyqjxQ8gaH4mzVH0nuuX6',
       backend: 'google-oauth2',
       token: tokenResponse.access_token,
     };
