@@ -23,7 +23,7 @@ const googleLogin = useGoogleLogin({
       token: tokenResponse.access_token,
     };
 
-    const SignINwithaccesToken = await axios.post('https://dashboard.render.com/auth/convert-token', data);
+    const SignINwithaccesToken = await axios.post('https://django-oauth.onrender.com/auth/convert-token', data);
 
 
     console.log("SignINwithaccesToken  info",SignINwithaccesToken);
